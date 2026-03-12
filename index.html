@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leading through AI — Live Cohort Summer '26 | Expanded Future</title>
+  <meta name="description" content="A live cohort for leaders who need a real AI plan — not another training. Limited places. Join the waitlist.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0c0a1a;
+      color: #e0ddf0;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Background circles */
+    .bg-circle {
+      position: fixed;
+      border-radius: 50%;
+      border: 1px solid rgba(120, 100, 180, 0.15);
+      pointer-events: none;
+    }
+    .bg-circle-1 {
+      width: 600px; height: 600px;
+      top: -150px; right: -100px;
+    }
+    .bg-circle-2 {
+      width: 500px; height: 500px;
+      bottom: -200px; left: -150px;
+    }
+    .bg-circle-3 {
+      width: 350px; height: 350px;
+      top: 40%; right: -50px;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: rgba(180, 170, 220, 0.6);
+      margin-bottom: 48px;
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 700;
+      line-height: 1.2;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    h1 em {
+      font-style: italic;
+      color: #b8aef0;
+    }
+
+    .pain-points {
+      list-style: none;
+      margin: 32px 0 40px;
+      padding: 0;
+    }
+    .pain-points li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #c8c4e0;
+    }
+    .pain-points li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #b8aef0;
+      font-size: 20px;
+    }
+
+    .cta-section {
+      text-align: center;
+      margin: 48px 0 32px;
+    }
+    .cta-heading {
+      font-size: clamp(24px, 4vw, 34px);
+      font-weight: 700;
+      color: #b8aef0;
+      margin-bottom: 8px;
+    }
+    .cta-url {
+      font-size: 14px;
+      color: rgba(180, 170, 220, 0.5);
+      margin-bottom: 36px;
+    }
+
+    /* Tally embed container */
+    .form-container {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(120, 100, 180, 0.2);
+      border-radius: 16px;
+      padding: 32px 24px;
+      margin: 0 auto;
+      max-width: 480px;
+    }
+    .form-container h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Tally iframe styling */
+    .form-container iframe {
+      width: 100%;
+      border: none;
+    }
+
+    /* Fallback if no Tally yet */
+    .placeholder-note {
+      text-align: center;
+      font-size: 13px;
+      color: rgba(180, 170, 220, 0.4);
+      margin-top: 16px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 64px;
+      font-size: 13px;
+      color: rgba(180, 170, 220, 0.35);
+    }
+    footer a {
+      color: rgba(180, 170, 220, 0.5);
+      text-decoration: none;
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 40px 20px 60px; }
+      .form-container { padding: 24px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-circle bg-circle-1"></div>
+  <div class="bg-circle bg-circle-2"></div>
+  <div class="bg-circle bg-circle-3"></div>
+
+  <div class="container">
+
+    <div class="logo">Expanded Future</div>
+
+    <h1>Leading through AI: <em>Live cohort summer '26</em></h1>
+
+    <ul class="pain-points">
+      <li>Your team has the tools. They're not using them well.</li>
+      <li>You're fielding AI questions from leadership you don't have answers to yet.</li>
+      <li>You need a plan that actually holds — not another training.</li>
+      <li>You need to feel informed + up to date about what AI/agents can ACTUALLY do.</li>
+    </ul>
+
+    <div class="cta-section">
+      <div class="cta-heading">Limited places. Join the waitlist.</div>
+    </div>
+
+    <div class="form-container">
+      <h2>Get on the list</h2>
+
+      <iframe
+        data-tally-src="https://tally.so/embed/RG4qBj?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        loading="lazy"
+        width="100%"
+        height="300"
+        title="Join the waitlist"
+      ></iframe>
+
+      <script>
+        // Tally embed script
+        var d=document,w="https://tally.so/widgets/embed.js",
+        v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};
+        if("undefined"!=typeof Tally)v();
+        else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w;s.onload=v;s.onerror=v;d.body.appendChild(s)}
+      </script>
+    </div>
+
+    <footer>
+      &copy; 2026 <a href="https://expandedfuture.com">Expanded Future</a>
+    </footer>
+
+  </div>
+
+</body>
+</html>
